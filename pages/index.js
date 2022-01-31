@@ -55,7 +55,7 @@ export default function PaginaInicial() {
             onSubmit={function(eventoForm) {
               eventoForm.preventDefault();
               console.log('Alguém submeteu o form');
-              roteamento.push('/chat');
+              roteamento.push(`/chat?username=${username}`);
 
             }}
             styleSheet={{
